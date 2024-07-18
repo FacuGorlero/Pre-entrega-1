@@ -75,7 +75,8 @@ router.put('/:id', async (req, res) => {
 
 
 router.delete('/:id', async (req, res)=> {
-    const id = req.params.id +1;
+  try{
+  const id = parseInt(req.params.id, 10);
     const resp = await productos.deleteProduct(id);
 
     if (typeof (resp) === "string") {
@@ -87,7 +88,10 @@ router.delete('/:id', async (req, res)=> {
           status: "ok",
           data: resp
       })}
-
+    }catch (error) {
+      console.error('Error en el endpoint /delete:', error);
+      res.status(500).send('Error al procesar la solicitud');
+  }
 
 
 });
