@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Bicicleta Volta Ruta Brest Horq. Carbono Sora 18v 700c",
+    "description": "Cuadro aluminio ruta volta brest azul horquilla carbono r700 volta",
+    "code": "1006836",
+    "price": 1198299,
+    "status": false,
+    "stock": 15,
+    "category": "Ruta",
+    "thumbnail": ""
+  },
+  {
+    "id": 2,
+    "title": "Producto de prueba",
+    "description": "Descripción del producto de prueba",
+    "code": "PRD001",
+    "price": 100,
+    "status": true,
+    "stock": 50,
+    "category": "Categoría de prueba",
+    "thumbnail": "http://example.com/imagen.jpg"
+  }
+]
